@@ -1,0 +1,4 @@
+name: core
+main: net.exemine.core.Core
+version: 1.0
+author: valentino @ execets

@@ -1,0 +1,11 @@
+.idea
+*.iml
+*.sh
+*.bat
+.gradle
+build
+target
+dependency-reduced-pom.xml
+compiled
+scripts
+gradle.properties

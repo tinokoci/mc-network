@@ -1,0 +1,35 @@
+environment: "TEST"
+discord-token: "unknown"
+mongodb-uri: "mongodb://localhost:27017"
+redis-uri: "redis://localhost:6379"
+proxy-key: "unknown"
+hastebin-address: "unknown"
+twitter:
+  feed:
+    oAuthConsumerKey: "unknown"
+    oAuthConsumerSecret: "unknown"
+    oAuthAccessToken: "unknown"
+    oAuthAccessTokenSecret: "unknown"
+activity:
+  type: "PLAYING"
+  message: "around"
+role:
+  member: "Member"
+  linked: "Linked"
+  link-lock: "Link Lock"
+  uhc-alerts: "UHC Alerts"
+channel:
+  welcome: "welcome"
+  bot-commands: "bot-commands"
+  changelogs: "changelogs"
+  bugs: "bug-reports"
+  staff-suggestions: "staff-suggestions"
+  staff-list: "staff-list"
+  uhc-approval: "uhc-approval"
+  upcoming-matches: "upcoming-matches"
+  match-alerts: "match-alerts"
+  winners: "winners"
+emoji:
+  agree: "yes"
+  disagree: "no"
+ticket-categories-starting-position: 3

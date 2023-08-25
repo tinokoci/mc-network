@@ -1,0 +1,5 @@
+name: hub
+main: net.exemine.hub.Hub
+version: 1.0
+depend: [core]
+author: valentino @ execets

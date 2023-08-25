@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':api')
+    implementation 'org.mongodb:mongodb-driver:3.12.11'
+    compileOnly 'com.execets.spigot:server:1.8.8-R0.1-SNAPSHOT'
+    compileOnly files('../libs/bukkitapi-1.0-SNAPSHOT.jar')
+}

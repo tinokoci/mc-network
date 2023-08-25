@@ -1,0 +1,70 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id('com.github.johnrengelman.shadow') version '8.1.0'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'maven-publish'
+
+    group = "net.exemine.${project.name.toLowerCase()}"
+    version '1.0'
+
+    sourceCompatibility = 11
+    targetCompatibility = 11
+    compileJava.options.encoding = "UTF-8"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.jetbrains:annotations:23.1.0'
+        compileOnly 'org.projectlombok:lombok:1.18.26'
+        annotationProcessor 'org.projectlombok:lombok:1.18.26'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.incremental = true
+    }
+
+    if (project.getName() != 'api') {
+        apply plugin: 'com.github.johnrengelman.shadow'
+
+        artifacts {
+            archives shadowJar
+        }
+
+        shadowJar {
+            archiveFileName = project.getName() + '.jar'
+            destinationDirectory.set(new File(getRootDir(), 'compiled'))
+            relocate 'org.yaml', 'net.exemine.yaml'
+            relocate 'com.google.gson', "net.exemine.gson"
+        }
+    }
+
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                from components.java
+            }
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+        testClassesDirs = fileTree(dir: 'build/classes/java/test')
+        doFirst {
+            sourceSets.test.java.srcDirs = ['src/test/java']
+        }
+    }
+}
+
+allprojects {
+    tasks.register('install', GradleBuild) {
+        tasks = ['build', 'publishToMavenLocal']
+    }
+}

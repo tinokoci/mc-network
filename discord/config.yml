@@ -1,0 +1,25 @@
+environment: "TEST"
+discord-token: "OTQxMzk4NjU0MDMwMzIzNzIy.G-E9dR.IIC0xRyhFoY1ZaS7XssPdSdN3_PwnZpZrZzS3w"
+mongodb.uri: "mongodb://localhost:30000"
+redis.uri: "redis://localhost:4000"
+proxy-key: "unknown"
+hastebin-address: "http://149.102.141.10:7777/"
+activity:
+  type: "PLAYING"
+  message: "test"
+role:
+  member: "Member"
+  linked: "Linked"
+  link-lock: "Link Lock"
+channel:
+  welcome: "welcome"
+  arrivals: "arrivals"
+  bot-commands: "bot-commands"
+  changelogs: "changelogs"
+  bugs: "bug-reports"
+  staff-suggestions: "staff-suggestions"
+  staff-list: "staff-list"
+emoji:
+  agree: "yes"
+  disagree: "no"
+ticket-categories-starting-position: 3

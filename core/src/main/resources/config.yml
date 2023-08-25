@@ -1,0 +1,9 @@
+environment: "TEST"
+mongodb-uri: "mongodb://localhost:27017"
+redis-uri: "redis://localhost:6379"
+proxy-key: "unknown"
+hastebin-address: "unknown"
+instance:
+  name: "WIP"
+  type: "unknown"
+  whitelist: "DEFAULT"

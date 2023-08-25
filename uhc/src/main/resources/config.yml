@@ -1,0 +1,16 @@
+location.spawn: "#w;uhc_lobby:#x;0.5:#y;150.0:#z;0.5:#p;0:#yaw;180"
+leaderboard.npc.first: "#w;uhc_lobby:#x;0.5:#y;153.5:#z;-60.5:#p;0:#yaw;0"
+leaderboard.npc.second: "#w;uhc_lobby:#x;-5.5:#y;153.5:#z;-60.5:#p;0:#yaw;0"
+leaderboard.npc.third: "#w;uhc_lobby:#x;5.5:#y;153.5:#z;-60.5:#p;0:#yaw;0"
+practice_map_radius: 100
+practice_scatter_xz.bound: 60
+practice_scatter_y.bound: 100
+lobby_bound.x.min: -100
+lobby_bound.x.max: 100
+lobby_bound.z.min: -150
+lobby_bound.z.max: 40
+lobby_bound.y.max: 250
+lobby_whoosh.y: 90
+world_generator_directory: "/home/exemine/instances/world-generator"
+nether_generator_directory: "/home/exemine/instances/nether-generator"
+worlds_used: false

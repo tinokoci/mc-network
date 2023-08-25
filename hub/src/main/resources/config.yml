@@ -1,0 +1,9 @@
+void_teleport_y: 0
+map_radius: 250
+location:
+  spawn:
+  hologram:
+    welcome:
+  npc:
+    uhc:
+    unknown:

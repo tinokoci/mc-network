@@ -1,0 +1,5 @@
+dependencies {
+    compileOnly project(':api')
+    compileOnly project(':core')
+    compileOnly 'com.execets.spigot:server:1.8.8-R0.1-SNAPSHOT'
+}

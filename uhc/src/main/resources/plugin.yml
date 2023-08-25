@@ -1,0 +1,5 @@
+name: uhc
+main: net.exemine.uhc.UHC
+version: 1.0
+author: valentino @ execets
+depend: [core, worldborder, FastAsyncWorldEdit, WorldEdit]

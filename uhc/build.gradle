@@ -1,0 +1,9 @@
+dependencies {
+    compileOnly project(':api')
+    compileOnly project(':core')
+    compileOnly project(':world-border')
+    compileOnly 'com.execets.spigot:server:1.8.8-R0.1-SNAPSHOT'
+    compileOnly files('../libs/fawe.jar')
+    compileOnly files('../libs/worldedit.jar')
+    compileOnly files('../libs/bukkitapi-1.0-SNAPSHOT.jar')
+}
