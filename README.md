@@ -1,5 +1,6 @@
 # mc-infrastructure
-This is all of backend related software created and maintained for the / minecraft server.
+This is all of backend related software created and maintained for the Exemine minecraft server.
+Source code was leaked and sold without my permission so I decided to open source it.
 
 ### Important Stack Components
 - [/-spigot](https://github.com/execets/exe-spigot) - Our modified version of the spigot server
